@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dokdo', cursive;
+}
+
+body {
+    display: grid;
+    widows: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: darkgray;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows:  repeat(8, 1fr );
+    background:transparent;
+}
+
+.grid-child {
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    background: lightblue;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.child4 {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.list-element-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-element-content {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    font-size: 10px;
+    transition: .1s;
+}
+
+.hidden-elements-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 20px;
+    z-index: 2;
+    transition: .2s;
+
+}
+
+.inner-hidden-elements-container {
+    display: flex;
+}
+
+.hidden-element {
+    z-index: 2;
+}
+.inner-hidden-element {
+    position:relative;
+    right: 20px;
+    z-index: 1;
+    transition: .2s
+}
+
+.inner-hidden-elements-container:hover .inner-hidden-element {
+    right: 0;
+}
+
+.child4:hover .hidden-elements-container {
+    right: 0;
+}
+
+.list-element-content:hover {
+    background: rgb(250, 249, 248);
+    border: solid 1px black; 
+}
+
+.hidden-element:hover img {
+    transform: scale(1.3);
+}
+
+.inner-hidden-element:hover img {
+    transform: scale(1.3);
+}
+
+.grid-child:hover:not(.child4){
+    background: rgb(212, 15, 219);
+    border: solid 1px black; 
+}
+
+img {
+    width: 20px;
+    padding: 3px;
+    transition: .3s;
+}
+
+
+
