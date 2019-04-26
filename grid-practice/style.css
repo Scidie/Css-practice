@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Anton', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: lightgray;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+}
+
+.header-container {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50vh;
+    background: url(https://www.designyourway.net/blog/wp-content/uploads/2018/08/Fullscreen-Header-B_-ht.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;                     
+    background-position: center center; 
+}
+
+.header-background-image {
+
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+}
+
+.title {
+    height: 50%;
+    background: transparent;
+}
+
+.navigation-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-top: calc(50vh - 30px);
+    width: 100%;
+    height: 25px;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+.navigation-bar > ul {
+    display: flex;
+    margin-right: 20vw;
+}
+
+.navigation-bar > ul > li {
+    margin: 0 2px;
+    padding: 5px;
+    list-style: none;
+}
+
+.navigation-bar > ul > li:hover {
+    color: rgb(221, 6, 88);
+}
+
+.main-section-container {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(16, 6vw) / repeat(10, 7.5vw);
+    margin: 0 10vw;
+}
+
+.main-section-element {
+    background: lightblue;
+    margin: 2px;
+}
+
+.footer-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 100%;
+}
+
+.footer-element {
+    margin:2px;
+    width: 50%;
+    height: 200px;
+    background: peru;
+}
+
+.large-block-up {
+    grid-area: 1/1/7/7;
+    background: lightcoral;
+}
+
+.small-block-up {
+    grid-area: 1/7/4/11;
+}
+
+.small-block-down {
+    grid-area: 4/7/7/11;
+}
+
+.big-block-left {
+    grid-area: 7/1/11/6;
+}
+
+.big-block-right {
+    grid-area: 7/6/11/11;
+}
+
+.second-small-block-up {
+    grid-area: 11/1/14/5;
+}
+
+.second-small-block-down {
+    grid-area: 14/1/17/5;
+}
+
+.large-block-down {
+    grid-area: 11/5/17/11; 
+}
