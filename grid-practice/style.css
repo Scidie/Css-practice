@@ -10,7 +10,6 @@
 body {
     display: flex;
     justify-content: center;
-    background: lightgray;
 }
 
 .main-container {
@@ -18,7 +17,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    background: rgb(255, 255, 255);
+    background: rgb(219,219,219);
+    background: radial-gradient(circle, rgba(63,94,251,0.30460252948835786) 0%, rgba(255,185,199,0.3382159748665091) 100%);
 }
 
 .header-container {
